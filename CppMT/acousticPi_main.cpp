@@ -330,7 +330,7 @@ int main(int argc, char **argv)
 
     bool show_preview = true;
 
-    cap.open("tcpclientsrc host=172.24.1.1 port=5200 ! gdpdepay ! rtph264depay ! avdec_h264 ! videoconvert ! appsink", cv::CAP_GSTREAMER);
+    cap.open("tcpclientsrc host=172.24.1.1 port=5300 ! gdpdepay ! rtph264depay ! avdec_h264 ! videoconvert ! appsink", cv::CAP_GSTREAMER);
 /*
     //If no input was specified
     if (input_path.length() == 0)
