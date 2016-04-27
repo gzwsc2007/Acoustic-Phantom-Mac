@@ -39,8 +39,8 @@ using ::atof;
 #define SERVO_SERVER_PORT  5200
 #define SERVO_SERVER_CMD_PACKET_SIZE  8
 
-#define PIXEL_TO_DEG_X   ( 1.0 / 30.5 ) // with sign flip
-#define PIXEL_TO_DEG_Y   ( 1.0 / 30.5 ) // with sign flip
+#define PIXEL_TO_DEG_X   ( 1.0 / 20.5 ) // with sign flip
+#define PIXEL_TO_DEG_Y   ( 1.0 / 20.5 ) // with sign flip
 
 static string WIN_NAME = "CMT";
 static string OUT_FILE_COL_HEADERS =
