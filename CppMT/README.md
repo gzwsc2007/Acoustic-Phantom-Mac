@@ -102,3 +102,13 @@ The data file includes header data so that it can be loaded into Excel or R
 directly.
 
 [1]: http://en.wikipedia.org/wiki/BSD_licenses#2-clause_license_.28.22Simplified_BSD_License.22_or_.22FreeBSD_License.22.29
+
+## Notes from Anson: Use CppMT with Gstreamer and OpenCV3 on Mac OS
+Install Gstreamer-1.0
+```
+brew install gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gat-plugins-ugly
+brew install gst-libav
+```
+Note that `gst-libav` is needed because we want the `avdec_h264` element.
+
+Then follow [http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/] to properly install OpenCV3. The `brew install python` step is necessary. Somehow we don't want to use the system built-in python. Note: Don't forget to do `sudo make install` after `make` is completed!!
